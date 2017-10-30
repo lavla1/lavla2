@@ -1,11 +1,12 @@
 # Lavla2
 # Source Code
 import sys
+import os
 
 class lavla2:
   data = ""
   def __init__(view):
-    data = open(view + ".lavla2","r").read()
+    data = open(os.path.join("./views/",view + ".lavla2"),"r").read()
     
   def __data(form):
     return data.format(form)
